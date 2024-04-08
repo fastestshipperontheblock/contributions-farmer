@@ -1,7 +1,7 @@
 package github
 
 import (
-	"github.com/burgercking/contributions-farmer/internal/common"
+	"github.com/liseloge/contributions-farmer/internal/common"
 )
 
 type Config struct {

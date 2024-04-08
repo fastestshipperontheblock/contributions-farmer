@@ -7,9 +7,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/burgercking/contributions-farmer/internal/config"
-	"github.com/burgercking/contributions-farmer/internal/farmer"
-	"github.com/burgercking/contributions-farmer/internal/vcs/github"
+	"github.com/liseloge/contributions-farmer/internal/config"
+	"github.com/liseloge/contributions-farmer/internal/farmer"
+	"github.com/liseloge/contributions-farmer/internal/vcs/github"
 )
 
 func initializeGithubFarmer(ctx context.Context) (farmer.Farmer, error) {

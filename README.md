@@ -1,9 +1,5 @@
 # Contributions farmer
 
-**⚡ Blazingly fast contributions farmer.**
-
-![Farmer's result](.github/assets/result.png)
-
 ## Step-by-step
 
 **First of all you need to generate two github tokens.**

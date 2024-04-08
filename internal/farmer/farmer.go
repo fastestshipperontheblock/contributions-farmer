@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/burgercking/contributions-farmer/internal/vcs"
-	"github.com/burgercking/contributions-farmer/pkg/utils/fm"
+	"github.com/liseloge/contributions-farmer/internal/vcs"
+	"github.com/liseloge/contributions-farmer/pkg/utils/fm"
 )
 
 type Farmer interface {
@@ -97,11 +97,9 @@ func (a *activityFarmer) startWorker(id int, ctx context.Context, wg *sync.WaitG
 }
 
 func (a *activityFarmer) currentDateIsEnd(date time.Time) bool {
-	if date.Day() == a.end.Day() && date.Month() == a.end.Month() && date.Year() == a.end.Year() {
-		return true
-	}
+	end := a.end.AddDate(0, 0, -1)
 
-	return false
+	return date.Day() == end.Day() && date.Month() == end.Month() && date.Year() == end.Year()
 }
 
 func (a *activityFarmer) seedJobs(ctx context.Context, ch chan int) {

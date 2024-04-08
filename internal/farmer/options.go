@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/burgercking/contributions-farmer/internal/common"
-	"github.com/burgercking/contributions-farmer/internal/vcs"
+	"github.com/liseloge/contributions-farmer/internal/common"
+	"github.com/liseloge/contributions-farmer/internal/vcs"
 )
 
 const maxConcurrency = 16

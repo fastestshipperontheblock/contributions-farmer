@@ -1,4 +1,4 @@
-module github.com/burgercking/contributions-farmer
+module github.com/liseloge/contributions-farmer
 
 go 1.19
 
